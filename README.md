@@ -20,4 +20,4 @@ Este es un sitio web personal creado con **HTML, CSS y JavaScript**, utilizando 
 
 ## 🌍 Publicación
 El sitio está publicado en **GitHub Pages**:  
-👉 [https://sheynner-dev.github.io/portafolio/](https://sheynner-dev.github.io/portafolio/)
+👉 [https://sheynner-dev.github.io/web/](https://sheynner-dev.github.io/web/)
