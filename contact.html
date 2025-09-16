@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Sheynner Dev</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Sheynner<span>Dev</span></h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre mí</a></li>
+        <li><a href="projects.html">Proyectos</a></li>
+        <li><a href="contact.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contacto -->
+  <main class="content">
+    <h2 class="section-title">📬 Contáctame</h2>
+    <p class="section-desc">Envía un mensaje directo a mi WhatsApp o usa el formulario para redactar tu mensaje.</p>
+
+    <div class="contact-wrapper" style="display: grid; grid-template-columns: 1fr 360px; gap: 2rem; padding: 0 5%;">
+      <!-- Formulario (a WhatsApp) -->
+      <div>
+        <form id="contactForm" class="contact-form" onsubmit="return sendWhatsAppFromForm(event)">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+
+          <label for="email">Correo (opcional)</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@email.com">
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
+
+          <button type="submit" class="btn-neon">Enviar por WhatsApp 🚀</button>
+        </form>
+      </div>
+
+      <!-- Panel lateral con botón directo -->
+      <aside class="contact-card" style="background: rgba(255,255,255,0.03); border-radius:12px; padding:1.5rem; text-align:center;">
+        <h3>Envíame un WhatsApp</h3>
+        <p style="color:#94a3b8; margin-bottom:1rem;">Número directo</p>
+        <p style="font-weight:600; margin-bottom:1rem;">+51 978 110 873</p>
+
+        <!-- Enlace directo a WhatsApp (wa.me) -->
+        <a id="directWaLink" class="btn-neon" href="https://wa.me/51978110873?text=¡Hola%20Sheynner!%20Me%20interesa%20tu%20portafolio." target="_blank" rel="noopener">
+          Abrir WhatsApp
+        </a>
+
+        <p style="font-size:0.9rem; color:#94a3b8; margin-top:1rem;">Se abrirá WhatsApp Web o la app en tu dispositivo.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 - Sheynner Dev | Contacto</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
